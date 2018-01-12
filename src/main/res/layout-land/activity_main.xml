@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+    <ImageView
+        android:src="@drawable/mainpic"
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/image"
+        android:scaleType="center"
+        />
+
+    <ImageView
+        android:src="@drawable/literature_128"
+        android:id="@+id/iconbook"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/image"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Udacity"
+        android:id="@+id/name"
+        android:layout_toEndOf="@id/iconbook"
+        android:layout_below="@id/image"
+        android:layout_margin="6dp"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:src="@drawable/phone_128"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/iconbook"
+        android:id="@+id/iconphone"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="650-555-5555"
+        android:id="@+id/phone"
+        android:layout_toEndOf="@id/iconphone"
+        android:layout_below="@id/name"
+        android:layout_margin="6dp"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:src="@drawable/location_128"
+        android:id="@+id/iconlocation"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/iconphone"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2465 Latham St, Mountain View, CA 94043"
+        android:layout_below="@id/phone"
+        android:layout_toEndOf="@id/iconlocation"
+        android:id="@+id/address"
+        android:layout_margin="6dp"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:src="@drawable/geography_128"
+        android:id="@+id/iconweb"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/iconlocation"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.udacity.com"
+        android:layout_below="@id/address"
+        android:layout_toEndOf="@id/iconweb"
+        android:id="@+id/www"
+        android:layout_margin="6dp"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:src="@drawable/udacitylogo"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/logo"
+        android:scaleType="fitCenter"
+        android:background="@android:color/white"
+        />
+
+</RelativeLayout>
